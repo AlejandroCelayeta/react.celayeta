@@ -1,0 +1,73 @@
+.counter {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin-left: 1%;
+    padding: 2%;
+    background-color: #1976D2;
+    ;
+    width: fit-content;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 3px;
+}
+
+.number {
+    text-shadow: 5px 5px 5px #0f0e0e;
+    font-size: 2em;
+    font-weight: bold;
+    color: #b11035;
+}
+
+.button {
+    text-shadow: 5px 5px 5px #0f0e0e;
+    padding: 3%;
+    display: inline-block;
+    flex-direction: row;
+    font-weight: bold;
+    border: 2px solid #1976d2;
+    background: 1976D2;
+    border-radius: 18px;
+}
+
+.button-subtract {
+    color: #b11035;
+    text-shadow: 1px 1px 1px #0f0e0e;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: inline-block;
+    flex-direction: row;
+    font-weight: bold;
+    border: 2px solid #01070e;
+    background: rgb(198, 181, 79);
+    border-radius: 18px;
+}
+
+.button-add {
+    color: #b11035;
+    text-shadow: 1px 1px 1px #0f0e0e;
+    display: inline-block;
+    flex-direction: row;
+    font-weight: bold;
+    border: 2px solid #01070e;
+    background: rgb(198, 181, 79);
+    border-radius: 20px;
+}
+
+.button-agregar {
+    color: #b11035;
+    text-shadow: 1px 1px 1px #0f0e0e;
+    background: rgb(198, 181, 79);
+    border: 2px solid #01070e;
+    font-size: small;
+    font-weight: bold;
+}
+
+.button-reset {
+    color: #b11035;
+    text-shadow: 1px 1px 1px #0f0e0e;
+    border: 2px solid #01070e;
+    background: rgb(198, 181, 79);
+    font-weight: bold;
+}

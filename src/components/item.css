@@ -1,0 +1,60 @@
+.card{
+    border: 3px solid #1976d2;
+    border-radius: 12%;
+    box-shadow: 10px 10px 5px gris;
+}
+.cardimg{
+    border-radius: 10%;
+    padding: 5%;
+    height: 320px;
+    width: 100px;
+    border: 3px solid #1976d2;
+}
+
+.body{
+    text-shadow: 1px 1px 1px #0f0e0e;
+    border-radius: 10%;
+    border: 1px solid  #1976d2;
+    background-color: #1976D2;
+}
+.titulo{
+    font-size: small;
+    color: #b11035;
+}
+
+.cardtext{
+    display: block;
+    margin: 2%;
+    padding: 2%;
+    font-size: small;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-comprar{
+    margin: 35%;
+    padding: 3%;
+    text-decoration: none;
+    text-decoration-style: none;
+    color: aliceblue;
+    border: 2px solid #01070e;
+    background: rgb(198, 181, 79);
+    border-radius: 18px;
+    font-size: small;
+    color: #b11035;
+}
+.btn-fin {
+    padding: 1%;
+    margin-left: 2.3%;
+    font-size: small;
+    color: #b11035;
+    text-shadow: 5px 5px 5px #0f0e0e;
+    display: inline-block;
+    flex-direction: row;
+    font-weight: bold;
+    background: 1976D2;
+    border-radius: 18px;
+    border: 2px solid #01070e;
+    background: rgb(198, 181, 79);
+    border-radius: 18px;
+}

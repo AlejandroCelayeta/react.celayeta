@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { Card } from 'react-bootstrap'
 import './item.css';
 import {Link} from 'react-router-dom';
 import ItemCount from './ItemCount';
 import { useState } from 'react';
+
 
 
 export default function ItemDetail ({resultado}){
@@ -14,6 +15,9 @@ export default function ItemDetail ({resultado}){
     function onAdd(contador){
       alert(`Se han agregado: ${contador} productos`);
       setUnidades(contador);
+      //isInCart(resultado.id);
+      //addItem(resultado, unidades)
+
     }
   
     return (
@@ -40,4 +44,4 @@ export default function ItemDetail ({resultado}){
       {unidades > 0 ? <Link to={'/cart'} className="btn-fin">Terminar mi compra</Link>:<ItemCount maximo={stock} inicial={1} onAdd={onAdd}/>} 
       </>
   )
-}
+    }

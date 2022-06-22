@@ -6,7 +6,7 @@ import './item.css';
 
 
 const Item = ({libro}) => {
-    const { id, categoria, nombre, precio, stock, imagen, descripcion} = libro
+    const { id, categoria, nombre, precio, stock, imagen} = libro
   return (
             <Card className='card' style={{ width: '18rem'}}>
   <Card.Img className='cardimg' variant="top" src={imagen} />

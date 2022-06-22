@@ -7,6 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SubNavbar from './components/SubNavbar.jsx';
 import Cart from './components/Cart';
+import MyProvider from './components/context/CartContext';
 
 
 
@@ -15,6 +16,7 @@ export default function App() {
   return (
 
   <BrowserRouter>
+  <MyProvider>
       <NavBar />
       <SubNavbar/>
       <Routes>
@@ -26,7 +28,7 @@ export default function App() {
         <Route path="/cart" element={ <Cart/> } />
           
       </Routes>
-
+      </MyProvider>
   </BrowserRouter>
   
   );

@@ -1,7 +1,7 @@
 .App {
   color: rgb(94, 92, 92);
   text-align: center;
-  background-color: rgb(11, 0, 0)
+  background-color: white; 
 }
 
 .App-logo {
@@ -39,12 +39,9 @@
   }
 }
 
-.h1-greeting{
-  font-size: small;
-  color: blue;
-  text-align: center;
-  margin-top: 10%;
-}
-.App{
-  background-color: white;
-}
+
+
+
+
+
+

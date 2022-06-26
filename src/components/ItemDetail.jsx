@@ -1,47 +1,74 @@
 import React from 'react';
-import { Card } from 'react-bootstrap'
-import './item.css';
-import {Link} from 'react-router-dom';
-import ItemCount from './ItemCount';
-import { useState } from 'react';
+import {useContext, useState, useEffect} from 'react';
+import {CartContext} from './context/CartContext';
+import ItemCount from './ItemCount'; 
+import './item.css'; 
 
 
+export default function ItemDetail({ detalle }) {
 
-export default function ItemDetail ({resultado}){
-  
-    const { id, categoria, nombre, precio, stock, imagen, descripcion} = resultado
-    const [unidades, setUnidades] = useState();
+    const [buyed, setBuyed]=useState(false)
+    
+    const { nombre, imagen, precio, stock, detalles } = detalle
+    
+    const [dispo,setDispo]= useState(stock)
 
-    function onAdd(contador){
-      alert(`Se han agregado: ${contador} productos`);
-      setUnidades(contador);
-      //isInCart(resultado.id);
-      //addItem(resultado, unidades)
+    useEffect(() => {
+        setDispo(stock)
+        console.log(dispo)
+           
+      })
+    
+    const { isInCart, addItem} = useContext(CartContext)
 
+    
+
+    
+    const onAdd = (count, inicial) =>{
+        if ( count < inicial ) {alert("Error, debe agregar productos al carrito.")
+    }else{
+        alert(`Se agregó ${count} productos al carrito correctamente.`)
+        
+        
     }
-  
+
+    isInCart(detalle.id)
+    addItem(detalle, count)
+}
+
+   
+    
+
     return (
-      <>
-        <Card className='card' style={{ width: '18rem'}}>
-        <Card.Img className='cardimg' variant="top" src={imagen} />
-        <Card.Body className='body'>
-          <Card.Title className='titulo' >{nombre}</Card.Title>
-          <Card.Text className='cardtext'>
-          Categoría:{categoria}
-            <br/>
-            Código: {id}
-            <br/>  
-           Precio: {precio}
-            <br />
-            Stock: {stock}
-            <br />
-            Descripción: {descripcion}
-          </Card.Text>
+        <>
+        <div className="div-item">
+        <h3 className='titulo-detalles text-center'>Detalles del Producto</h3>
+        <div className="row row-cols-md-2 p-4 div-item">
+            <div className="col">
+                <div className="card text-center">
+                    <img src={imagen} className="card-img-top" alt="imagen del libro" />
+                    <div className="card-body">
+                        <h5 className="text-nombre">{nombre}</h5>
+                        <p className="text-detalles">Detalles: {detalles}</p>
+                        <p className="text-precio" > Precio: ${precio}</p>
+                        <p className="text-stock">Stock: {dispo} unidades disponibles</p>
+                        {!buyed ? <ItemCount setBuyed={setBuyed}   setDispo={setDispo} dispo={dispo} inicial={1} onAdd={onAdd}/> : "" }
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </>
+    )
+}
 
-         
-        </Card.Body>
-      </Card>
-      {unidades > 0 ? <Link to={'/cart'} className="btn-fin">Terminar mi compra</Link>:<ItemCount maximo={stock} inicial={1} onAdd={onAdd}/>} 
-      </>
-  )
-    }
+
+
+
+
+
+
+
+
+

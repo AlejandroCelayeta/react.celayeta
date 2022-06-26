@@ -1,6 +1,44 @@
-.itemdiv{
-    display: flex;
+.div-item {
+
     flex-wrap: wrap;
-    border: 2px solid #1976d2;
     padding: 2%;
+}
+
+.div-h2 {
+    text-shadow: 5px 5px 5px #0f0e0e;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.fw-bold {
+    text-shadow: 5px 5px 5px #0f0e0e;
+    font-size: 2em;
+    font-weight: bold;
+    color: #b11035;
+    
+}
+
+.div-h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #b11035;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+}
+
+.title-libros {
+    text-align: center;
+    text-shadow: 5px 5px 5px #0f0e0e;
+    font-size: 1em;
+    font-weight: bold;
+    color: #1976d2;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+}
+
+.titleIndex {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 10px;
 }

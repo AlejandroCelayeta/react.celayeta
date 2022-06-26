@@ -6,15 +6,14 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import logo from "../components/logo.png";
 import CartWidget from "./CartWidget";
+import SubNavbar from "./SubNavbar";
 
-const pages = ["Registro", "Login", "Contacto"];
-
+const pages = [""];
 
 
 const NavBar = () => {
@@ -61,7 +60,7 @@ const NavBar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              
             </IconButton>
 
 
@@ -85,7 +84,7 @@ const NavBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">{pages}</Typography>
                   
               </MenuItem>
               ))}
@@ -122,10 +121,11 @@ const NavBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <CartWidget items={6} />
+          <CartWidget/>
           </Box>
         </Toolbar>
       </Container>
+      <SubNavbar/>
     </AppBar>
   );
 };

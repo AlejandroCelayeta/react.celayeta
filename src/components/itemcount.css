@@ -1,3 +1,9 @@
+.card-boy-counter{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .counter {
     display: flex;
     flex-direction: row;
@@ -5,7 +11,6 @@
     margin-left: 1%;
     padding: 2%;
     background-color: #1976D2;
-    ;
     width: fit-content;
     border: 2px solid white;
     text-align: center;
@@ -13,11 +18,32 @@
     padding: 3px;
 }
 
+.contador{
+    display: flex;
+    justify-content: center;
+    text-shadow: 5px 5px 5px #0f0e0e;
+    font-size: 2em;
+    font-weight: bold;
+    color: #b11035;
+}
 .number {
     text-shadow: 5px 5px 5px #0f0e0e;
     font-size: 2em;
     font-weight: bold;
     color: #b11035;
+}
+.button-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.div-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-body{
+   margin-left: inherit;
 }
 
 .button {
@@ -32,6 +58,22 @@
 }
 
 .button-subtract {
+    background:  #6e6eaf;
+    font-size: larger;
+    color: #b11035;
+    text-shadow: 1px 1px 1px #0f0e0e;
+    padding-left: 4%;
+    padding-right: 4%;
+    display: inline-block;
+    flex-direction: row;
+    font-weight: bold;
+    border: 2px solid #01070e;
+    border-radius: 20px;
+}
+
+.button-add {
+    background:  #6e6eaf;
+    font-size: larger;
     color: #b11035;
     text-shadow: 1px 1px 1px #0f0e0e;
     padding-left: 3%;
@@ -40,34 +82,26 @@
     flex-direction: row;
     font-weight: bold;
     border: 2px solid #01070e;
-    background: rgb(198, 181, 79);
-    border-radius: 18px;
-}
-
-.button-add {
-    color: #b11035;
-    text-shadow: 1px 1px 1px #0f0e0e;
-    display: inline-block;
-    flex-direction: row;
-    font-weight: bold;
-    border: 2px solid #01070e;
-    background: rgb(198, 181, 79);
     border-radius: 20px;
 }
 
 .button-agregar {
-    color: #b11035;
+    background:  #6e6eaf;
+    font-size: smaller;
+    color: #fdf9fa;
     text-shadow: 1px 1px 1px #0f0e0e;
-    background: rgb(198, 181, 79);
     border: 2px solid #01070e;
     font-size: small;
     font-weight: bold;
+    border-radius: 20px;
 }
 
 .button-reset {
-    color: #b11035;
+    background:  #6e6eaf;
+    font-size: smaller;
+    color: #9ec933;
     text-shadow: 1px 1px 1px #0f0e0e;
     border: 2px solid #01070e;
-    background: rgb(198, 181, 79);
     font-weight: bold;
+    border-radius: 20px;
 }

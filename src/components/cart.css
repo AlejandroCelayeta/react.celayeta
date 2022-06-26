@@ -1,0 +1,99 @@
+.cart {
+    color: #b11035;
+    margin-left: 2px;
+    margin-right: 20px;
+}
+
+.text-cart {
+    color: #b11035;
+    margin-left: 2px;
+    margin-right: 20px;
+}
+
+.btn-delete {
+    margin: 25%;
+    padding: 3%;
+    text-decoration: none;
+    text-decoration-style: none;
+    color: rgb(31, 112, 184);
+    border: 2px solid #01070e;
+    background: rgb(198, 181, 79);
+    border-radius: 18px;
+    font-size: small;
+    color: #b11035;
+
+}
+
+.centerCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    min-height: 75vh;
+}
+
+.bi-cart{
+    color: #b11035;
+    background-color: #01070e;
+    border-radius: 18px;
+}
+
+.titleCart {
+    padding: 4%;
+    color: #b11035;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+}
+
+.btnBuyBooks {
+    display: inline-block;
+}
+
+.noProducts {
+    color: #b11035;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+    padding-top: 4%;
+}
+
+.cartContainer {
+    display: grid;
+    border: 2px solid #b11035;;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 2%; 
+    grid-template-areas:
+        "imgProduct cartQty cartPrice cartSubt DelItemCard"
+        "imgProduct  cartQty cartPrice cartSubt DelItemCard"
+        "imgProduct  cartQty cartPrice cartSubt DelItemCard"
+        "imgProduct  cartQty cartPrice cartSubt DelItemCard"
+ 
+}
+.totalLabel{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: end;
+    margin-right: 5%;
+}
+
+.imgTrash {
+    width: 30px;
+    height: auto;
+}
+
+.finalEmpty{
+display: flex;
+margin-left: 41%;
+}
+
+.lineCart, .cardCart{
+    border: #01070e;
+    color: #b11035;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+}

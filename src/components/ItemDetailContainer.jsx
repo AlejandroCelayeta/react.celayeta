@@ -1,52 +1,40 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
-import libros from '../../src/helpers/arreglo.js'
+import { useState, useEffect } from 'react';
+import ItemDetail from './ItemDetail'; 
 import { useParams } from 'react-router-dom';
-import ItemDetail from './ItemDetail';
+import './item.css'; 
+
+
+
+export default function ItemDetailContainer (){
+
+    const {id} = useParams()
+    const [detalle, setDetalle] = useState()
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        const getDetail = () => {
+                fetch("../../data.json")
+                    .then(res => res.json())
+                    .then((data) => setDetalle(data.find(el => el.id === Number(id)))) 
+                    .then(setLoading(false))
+                    .catch(error => console.log("Error:", error))
+        }
+        setTimeout(() => {
+           getDetail();
+        }, 2000);
+    }, [id])
+    
+    return(
+        <div>
+            {(detalle) ? <ItemDetail detalle={detalle} /> : <div className='text-loading text-center'>{loading && "Loading"}</div>}
+        </div>
+        
+    );
+}
 
 
 
 
-export default function ItemDetailContainer() {
 
-  const {id} = useParams();
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-  const [resultado, setResultado] = useState([]);  
 
-  console.log(id)
-  
-  
-  useEffect(() => {
-    setResultado({});
-    setLoading(true);
-    setError(false);
-    const promesa = new Promise((res,) => {
-      setTimeout(() => {
-        res(libros.find(item => item.id === id));
-       }, 2000); 
-    });
-   
-    promesa
-      .then((result) => {
-        setResultado(result);
-      })
-      
-      .catch((error) => {
-        setError(true);
-        console.log(error);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
-  }, [id]);
-
- 
-  return(
-  <>    
-    <div className='loading'> {loading && 'Loading...'} </div>
-    <div> {error && 'Load error'} </div>    
-    <ItemDetail resultado={resultado}/> 
-  </>
-  )
-};

@@ -1,21 +1,34 @@
 .menu-navbar{
-    
     background: #1976d2;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
     text-decoration: none;
     color: white;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
 }
 #nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
-    
-}
+    }
+
 
 .lnk{
+    display: flex;
     text-decoration: none;
     text-decoration-style: none;
     color: aliceblue;
+    margin: 1%;
 }
+
+@media screen and (min-width:100px) and (max-width: 500px){
+    #nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        }
+   
+  
+  }

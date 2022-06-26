@@ -1,0 +1,9 @@
+
+[
+    {"categoria": "actionscript", "id": 1 , "nombre": "Action Script 3.0 Avanzado", "precio": 2300, "stock": 6, "imagen": "/images/actionscript1.png ", "detalles": "Nivel Avanzado"},
+    {"categoria": "actionscript", "id": 2, "nombre": "Action Script 3.0 para desarrolladores", "precio": 2100, "stock": 10, "imagen": "/images/actionscript2.png", "detalles": "Nivel Principiante"},
+    {"categoria": "apache", "id": 3, "nombre": "Apache - Desarrollo de módulos y aplicaciones", "precio": 3300, "stock": 8, "imagen": "/images/apache.png", "detalles": "Módulos y Aplicaciones"},
+    {"categoria": "devapps", "id": 4, "nombre": "UF1843: Desarrollo de aplicaciones web distribuídas", "precio": 1800, "stock": 10, "imagen": "/images/desarrolloapps.png", "detalles": "Nivel Avanzado"},
+    {"categoria": "java", "id": 5 ,  "nombre": "JAVA Como programar Novena Edición", "precio": 2200, "stock": 15, "imagen": "/images/java1.png", "detalles": "Nivel Principiante"},
+    {"categoria": "php", "id": 6,  "nombre": "USERS PHP Avanzado", "precio": 2500, "stock": "14", "imagen": "/images/php.png", "detalles": "Nivel Avanzado"}
+]

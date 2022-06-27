@@ -1,5 +1,4 @@
 import React, { useState} from 'react';
-import { Link } from 'react-router-dom';
 import "./itemcount.css";
 
 
@@ -40,7 +39,7 @@ export default function ItemCount ({ inicial, dispo, onAdd, setDispo, setBuyed }
 
 
     function carrito (){
-        return <Link to="/cart"><button className='btn btn-warning fw-bold p-2 m-2'>Ver carrito de compras</button></Link>
+        
     }
 
 
@@ -49,7 +48,6 @@ export default function ItemCount ({ inicial, dispo, onAdd, setDispo, setBuyed }
     <>
         <div className="text-center div-card">
             <div className="card-body-counter">
-                <Link to="/home"><button className='btn btn-warning fw-bold p-2 m-2'>Volver a la librería</button></Link>
                 <p className="contador">{count}</p>
                 <div className='button-display'>
                 <button onClick={restar} className="button-subtract">-</button>

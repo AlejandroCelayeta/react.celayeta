@@ -2,6 +2,7 @@ import React from 'react';
 import {useContext, useState, useEffect} from 'react';
 import {CartContext} from './context/CartContext';
 import ItemCount from './ItemCount'; 
+import {Link} from 'react-router-dom';
 import './item.css'; 
 
 
@@ -53,7 +54,8 @@ export default function ItemDetail({ detalle }) {
                         <p className="text-precio" > Precio: ${precio}</p>
                         <p className="text-stock">Stock: {dispo} unidades disponibles</p>
                         {!buyed ? <ItemCount setBuyed={setBuyed}   setDispo={setDispo} dispo={dispo} inicial={1} onAdd={onAdd}/> : "" }
-                        
+                        <Link to="/home"><button className='btn btn-warning fw-bold p-2 m-2'>Volver a la librería</button></Link>
+                        <Link to="/cart"><button className='btn btn-warning fw-bold p-2 m-2'>Ver carrito de compras</button></Link>
                     </div>
                 </div>
             </div>

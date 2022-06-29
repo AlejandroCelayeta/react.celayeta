@@ -45,6 +45,7 @@ export default function Cart() {
           <div className='totalLabel'>Importe total: ${getItemPrice()} ({getItemCount()} Producto/s)</div>
 
           <div className='finalEmpty'>
+          <Link to="/home"><button className='btn btn-warning fw-bold p-2 m-2 btnBack'>Volver a la librería</button></Link>
             <button className='btn btn-warning fw-bold p-2 m-2 btnAddCar btnFinalBuy'>Finalizar Compra</button>
             <button className='btn btn-warning fw-bold p-2 m-2 btnEmptyCart' onClick={emptyCart}>Vaciar Carrito</button>
           </div>

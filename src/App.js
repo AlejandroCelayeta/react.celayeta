@@ -9,9 +9,21 @@ import ItemListContainer from './components/ItemListContainer';
 import Contacto from './components/Contacto';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-
+import { initializeApp } from "firebase/app";
 
 export default function App() {
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAJ_MaWDUpKOxuMs1YO8RCNrWSYh2jsTko",
+    authDomain: "developers-books.firebaseapp.com",
+    projectId: "developers-books",
+    storageBucket: "developers-books.appspot.com",
+    messagingSenderId: "662242519803",
+    appId: "1:662242519803:web:7d5193b1a5ac883157de5e"
+  };
+  
+ initializeApp(firebaseConfig);
+
   return (
 <MyProvider>
   <BrowserRouter>

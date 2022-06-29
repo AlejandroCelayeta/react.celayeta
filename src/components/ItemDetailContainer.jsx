@@ -1,4 +1,5 @@
 import React from 'react';
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 import { useState, useEffect } from 'react';
 import ItemDetail from './ItemDetail'; 
 import { useParams } from 'react-router-dom';
@@ -12,29 +13,25 @@ export default function ItemDetailContainer (){
     const [detalle, setDetalle] = useState()
     const [loading, setLoading] = useState(true)
 
+    const db = getFirestore();
+    const coleccion = 'items';
+
     useEffect(() => {
-        const getDetail = () => {
-                fetch("../../data.json")
-                    .then(res => res.json())
-                    .then((data) => setDetalle(data.find(el => el.id === Number(id)))) 
-                    .then(setLoading(false))
-                    .catch(error => console.log("Error:", error))
+      const productFound = doc(db, coleccion, id);
+      getDoc(productFound).then((res)=>{
+        if(res.exists()){
+            console.log(res.data())
+            setDetalle({...res.data(), id: res.id})
+            setLoading(false);
+        }else{
+            alert("No se encontro el producto")
         }
-        setTimeout(() => {
-           getDetail();
-        }, 2000);
+      })
     }, [id])
     
     return(
         <div>
-            {(detalle) ? <ItemDetail detalle={detalle} /> : <div className='text-loading text-center'>{loading && "Loading"}</div>}
+            {loading ? <h5>Loading</h5> : <ItemDetail detalle={detalle} />}
         </div>
-        
     );
 }
-
-
-
-
-
-

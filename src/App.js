@@ -10,6 +10,8 @@ import Contacto from './components/Contacto';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { initializeApp } from "firebase/app";
+import Checkout from './components/Checkout';
+
 
 export default function App() {
 
@@ -43,6 +45,9 @@ export default function App() {
         <Route path="/cart" element={ <Cart/> } />
          {/*Muestra el carrito */}
         <Route path="/contacto" element={ <Contacto/> } />
+        {/*Ruta al checkout */}
+        <Route path="/checkout" element={ <Checkout/> } />
+        
 
       </Routes>
       <Footer/>

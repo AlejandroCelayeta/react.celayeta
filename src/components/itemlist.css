@@ -1,18 +1,21 @@
-.div-item {
-
+.divItem {
     flex-wrap: wrap;
     padding: 2%;
+    background-color: black;
 }
 
 .div-h2 {
-    text-shadow: 5px 5px 5px #0f0e0e;
+    text-shadow: 5px 5px 5px black;
     font-size: 1.5em;
     font-weight: bold;
     color: #1976d2;
 }
+.cardBody{
+    background-color: black;
+}
 
 .fw-bold {
-    text-shadow: 5px 5px 5px #0f0e0e;
+    text-shadow: 5px 5px 5px black;
     font-size: 2em;
     font-weight: bold;
     color: #b11035;
@@ -25,6 +28,7 @@
     font-size: 20px;
     color: #b11035;
     -webkit-text-stroke: 1px rgb(16, 15, 15);
+    background-color: black
 }
 
 .title-libros {
@@ -34,6 +38,7 @@
     font-weight: bold;
     color: #1976d2;
     -webkit-text-stroke: 1px rgb(16, 15, 15);
+    background-color: black
 }
 
 .titleIndex {
@@ -41,4 +46,8 @@
     font-size: 3rem;
     font-weight: bold;
     padding-top: 10px;
+}
+
+.backDiv{
+    background-color: black;
 }

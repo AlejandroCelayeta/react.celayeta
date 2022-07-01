@@ -45,8 +45,8 @@ const NavBar = () => {
               color: "white",
               textDecoration: "none",
               margin: "20px",
-            }}
-          >
+              }}
+          className='nameShop'>
             Developers Books
             
           </Typography>

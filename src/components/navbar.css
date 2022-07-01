@@ -1,7 +1,14 @@
 .img-logo {
     width: 100px;
-    border: 2px solid white;
+    border: 4px ridge  #b11035;;
     border-radius: 12px;
 }
 
 
+.nameShop{
+    
+    background-color: #01070e;
+    border: 4px ridge  #b11035;;
+    border-radius: 20px;
+    padding: 1%;
+}

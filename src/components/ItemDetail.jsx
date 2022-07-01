@@ -16,8 +16,7 @@ export default function ItemDetail({ detalle }) {
 
     useEffect(() => {
         setDispo(stock)
-        console.log(dispo)
-           
+               
       })
     
     const { isInCart, addItem} = useContext(CartContext)

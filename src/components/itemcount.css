@@ -1,9 +1,3 @@
-.card-boy-counter{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 .counter {
     display: flex;
     flex-direction: row;
@@ -41,9 +35,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #01070e;
 }
 .card-body{
    margin-left: inherit;
+   background-color: #01070e;
 }
 
 .button {

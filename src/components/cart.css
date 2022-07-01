@@ -2,12 +2,24 @@
     color: #b11035;
     margin-left: 2px;
     margin-right: 20px;
+    background-color: #01070e;
 }
 
 .text-cart {
     color: #b11035;
     margin-left: 2px;
     margin-right: 20px;
+}
+
+/* .btnFinalBuy, .btnBack, .btnEmptyCart{
+    display: flex;
+    flex-direction: column;
+} */
+
+.finalEmpty{
+    display: flex;
+    flex-direction: row;
+   
 }
 
 .btn-delete {
@@ -24,18 +36,23 @@
 
 }
 
+
+
 .centerCart {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
     min-height: 75vh;
+    background-color: black;
 }
 
-.bi-cart{
+
+.bi-cart2{
     color: #b11035;
-    background-color: #01070e;
-    border-radius: 18px;
+    background-color: black;
+    border: 4px ridge;
+    border-radius: 20px;
 }
 
 .titleCart {
@@ -44,10 +61,12 @@
     text-align: center;
     font-weight: bold;
     -webkit-text-stroke: 1px rgb(16, 15, 15);
+    
 }
 
 .btnBuyBooks {
     display: inline-block;
+    border: 4px ridge;
 }
 
 .noProducts {
@@ -57,7 +76,9 @@
     -webkit-text-stroke: 1px rgb(16, 15, 15);
     padding-top: 4%;
 }
-
+.centerCart{
+    background-color: black;
+}
 .cartContainer {
     display: grid;
     border: 2px solid #b11035;;
@@ -65,7 +86,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;
     align-items: center;
     justify-items: center;
-    margin-bottom: 2%; 
+    margin-bottom: 2%;
+    background-color: black;
     grid-template-areas:
         "imgProduct cartQty cartPrice cartSubt DelItemCard"
         "imgProduct  cartQty cartPrice cartSubt DelItemCard"
@@ -84,11 +106,17 @@
 .imgTrash {
     width: 30px;
     height: auto;
+    border: 3px ridge;
+
 }
 
 .finalEmpty{
 display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 margin-left: 38%;
+justify-content: space-between;
 }
 
 .lineCart, .cardCart{
@@ -97,3 +125,23 @@ margin-left: 38%;
     font-weight: bold;
     -webkit-text-stroke: 1px rgb(16, 15, 15);
 }
+
+.finalCost{
+    background-color: black;
+}
+
+.centerCart{
+    margin-top: 0%;
+    background-color: #01070e;
+}
+
+@media screen and (min-width:100px) and (max-width: 500px){
+    
+        .finalEmpty{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+           
+        }
+  
+  }

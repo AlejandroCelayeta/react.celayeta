@@ -1,0 +1,60 @@
+
+.titleCheck{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color: #b11035;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+    
+}
+
+.titleCheck{
+    margin-top: 1.5%;
+}
+
+.checkContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+    }
+
+.inName, .inMail, .inCel{
+    display: block;
+    background-color: #b11035;
+    margin: 1%;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    border: ridge;
+    color:#050002;
+    border-radius: 10px;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+} 
+.buyEnd{
+    display: block;
+    margin-left: 70%;
+}
+
+.orderNumber{
+    margin-top: 1%;
+    padding-right: 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color: #1976d2;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+    background-color: black;
+
+}
+
+.checkContainer{
+    padding:1%;
+    background-color: black;
+}
+.titleCheck{
+    padding:1%;
+    background-color: black;
+}

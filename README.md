@@ -1,21 +1,19 @@
 
-Desafío Item Collection
-Configura tu cuenta de Firebase, y crea un cloud Firestore con una nueva colección de items, con los siguientes atributos (como mínimo):
- categoryId, title, description, image, price, stock. 
-Extra-mile: si estás optando por el challenge-extra opcional, crea también tu colección de categorías dinámicas (id, key y nombre). 
+# Developers books
 
+## Specialty books shop for developers 
 
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), 
+for the cards and any buttons,  and Material UI for the NavBar. 
+Firebase for the database store.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+## You need run npm install first
+
+### after `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

@@ -34,11 +34,11 @@ export default function ItemCount ({ inicial, dispo, onAdd, setDispo, setBuyed }
     }
 
     const carritoCompras = () => {
-        if ( count => inicial ) {setCount(carrito)}
+        if ( count => inicial ) {setCount(cart)}
     }
 
 
-    function carrito (){
+    function cart (){
         
     }
 

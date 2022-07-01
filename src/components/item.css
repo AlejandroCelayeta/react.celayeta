@@ -4,9 +4,8 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-}
-
-
+    background-color: black;
+ }
 
 
 .text-loading {
@@ -35,6 +34,7 @@
     box-shadow: 10px 10px 5px gris;
     align-items: center;
     margin: 3%;
+    background-color: #01070e;
 
 }
 
@@ -56,6 +56,7 @@
     border: 2px solid #b11035;
     margin: inherit;
     border-radius: 10%;
+    background-color: black;
 }
 
 .text-nombre {
@@ -94,12 +95,13 @@
 }
 
 .btn-detalle {
-    border: 2px solid black;
+    border: 4px ridge rgb(252, 250, 250);
     text-align: center;
     font-weight: bold;
     font-size: 20px;
     color: #b11035;
     -webkit-text-stroke: 1px rgb(16, 15, 15);
+    
 }
 
 .card-title {

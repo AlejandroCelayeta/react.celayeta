@@ -16,7 +16,7 @@ export default function Item({ inventario }) {
                         <h6 className="text-nombre">{nombre}</h6>
                         <p className="text-precio">${precio}</p>
                         <p className="text-stock">Stock: {stock} unidades disponibles</p>
-                        <Link to={`/item/${id}`}><button className='btn-detalle'>Ver detalle</button></Link>
+                        <Link to={`/item/${id}`}><button className=' btn btn-warning fw-bold p-2 m-2'>Ver detalle</button></Link>
                     </div>
                 </div>
             </div>

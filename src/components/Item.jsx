@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./item.css";
 
 
-export default function Item({ inventario }) {
+export default function Item({ inventary }) {
 
-    const { nombre, stock, precio, imagen, id } = inventario;
+    const { nombre, stock, precio, imagen, id } = inventary;
 
     return (
         <div className="row row-cols-md-2 p-2 div-item">

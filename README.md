@@ -3,9 +3,21 @@
 
 ## Specialty books shop for developers 
 
+It's my project !
+
+I make this develope for my React JS study on CoderHouse.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), 
-for the cards and any buttons,  and Material UI for the NavBar. 
-Firebase for the database store.
+for the cards and any buttons, and Material UI for the NavBar. Also, i use Firebase for the database store,
+and Local Storage to save the data into the Cart.
+
+Special thanks to the Teacher Guillermo Fergnani and to Santiago Quipildor, my tutor.
+
+Bottom, you can find the dependencies needed to built this project.
+
+Thanks for read.me :)
+
+Alejandro Celayeta
 
 ## Available Scripts
 

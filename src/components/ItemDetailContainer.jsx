@@ -14,10 +14,10 @@ export default function ItemDetailContainer (){
     const [loading, setLoading] = useState(true)
 
     const db = getFirestore();
-    const coleccion = 'items';
+    const collection = 'items';
 
     useEffect(() => {
-      const productFound = doc(db, coleccion, id);
+      const productFound = doc(db, collection, id);
       getDoc(productFound).then((res)=>{
         if(res.exists()){
             console.log(res.data())
